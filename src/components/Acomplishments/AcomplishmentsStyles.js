@@ -7,6 +7,7 @@ export const Boxes = styled.div`
   gap: 24px;
   margin: 24px 0 40px;
 
+
   @media ${props => props.theme.breakpoints.md}{
     gap: 16px;
     margin: 20px 0 32px;
@@ -27,10 +28,16 @@ export const Box = styled.div`
   border-radius: 12px;
   height: 144px;
   padding: 24px;
+  
+  :hover {
+    filter: brightness(0.85);
+  }
+
   @media ${props => props.theme.breakpoints.lg} {
     height: 210px;
 
   }
+  
 
   @media ${props => props.theme.breakpoints.md} {
     height: 135px;
